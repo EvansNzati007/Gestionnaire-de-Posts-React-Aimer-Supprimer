@@ -1,0 +1,160 @@
+/* Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #f4f4f9;
+  color: #333;
+  font-size: 16px;
+}
+
+#root {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Styling */
+.entete {
+  padding: 1rem 0;
+  background-color: #61dafb;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.entete h3 {
+  margin: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+/* Post Styling */
+.post {
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.post.active {
+  background-color: #ffe5b4; /* Couleur pêche douce */
+  border-color: #ff9900; /* Bordure orange vif */
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.post:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.2rem;
+}
+
+.post p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 1.8rem;
+}
+
+/* Button Styling */
+.btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  background-color: #61dafb;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+button.delete {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+button.delete:hover {
+  background-color: #ff3333;
+}
+
+button.liker {
+  background-color: #61dafb;
+  color: white;
+}
+
+button.liker:hover {
+  background-color: #4db8f7;
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 2rem;
+  border-radius: 10px;
+}
+
+.footer p {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.footer strong {
+  color: #61dafb;
+}
+
+.footer p:last-child {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #root {
+    padding: 1rem;
+  }
+
+  .post {
+    padding: 1.5rem;
+  }
+
+  .btn {
+    flex-direction: column;
+  }
+
+  button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .entete h3 {
+    font-size: 1.2rem;
+  }
+}
