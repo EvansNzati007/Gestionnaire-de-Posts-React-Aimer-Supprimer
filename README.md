@@ -56,9 +56,11 @@ Voici un aperçu de la structure des fichiers du projet :
 ```
 /src
 ├── /composants
-│   ├── NavBar.js    # Composant de la barre de navigation avec compteur de likes
-│   └── Post.js      # Composant qui gère l'affichage et les actions sur chaque post
-├── App.js           # Composant principal qui gère les posts et leurs interactions
+│   ├── NavBar.jsx    # Composant de la barre de navigation avec compteur de likes
+│   └── Post.jsx      # Composant qui gère l'affichage et les actions sur chaque post
+│   ├── Footer.jsx     # Composant de footer avec copyright
+|
+├── App.jsx           # Composant principal qui gère les posts et leurs interactions
 ├── App.css          # Styles de l'application
 └── index.js         # Point d'entrée principal du projet
 ```
