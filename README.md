@@ -1,6 +1,3 @@
-Voici un exemple de fichier `README.md` pour votre projet, qui décrit bien les fonctionnalités, la structure et la manière de démarrer l'application. Ce format est très couramment utilisé dans les projets GitHub.
-
----
 
 # Gestionnaire de Posts React : Aimer & Supprimer
 
